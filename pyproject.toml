@@ -1,0 +1,20 @@
+[project]
+name = "techastuces-kit"
+version = "1.0.0"
+description = "Security & dev command-line toolkit — by Styven Emmanuel (TechAstuces Kit)"
+authors = [{ name = "Styven Emmanuel" }]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+techastuceskit = "techastuceskit.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["techastuceskit"]
